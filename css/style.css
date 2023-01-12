@@ -787,7 +787,7 @@ body.lock {
    left: 5vw;
    top: 35vw;
    z-index: 1;
-   box-shadow: 1px 1px 55px 5px black;
+   box-shadow: 1px 1px 2.865vw 0.26vw black;
 }
 
 .animation__moon {
