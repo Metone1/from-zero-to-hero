@@ -581,7 +581,13 @@ body.lock {
 .swiper-slide-link i:hover {
    text-shadow: -1px -1px rgb(0, 0, 0),
       1px 1px rgb(0, 0, 0);
-   font-size: 1.7vw;
+   font-size: 1.719vw;
+}
+
+@media (max-width:1439px) {
+   .swiper-slide-link i:hover {
+      font-size: 30px;
+   }
 }
 
 .swiper-slide[aria-label="4 / 4"] .swiper-slide-link i:hover {
