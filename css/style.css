@@ -780,8 +780,8 @@ body.lock {
 }
 
 .moon__shadow {
-   width: 125px;
-   height: 125px;
+   width: 6.51vw;
+   height: 6.51vw;
    border-radius: 50%;
    position: absolute;
    left: 5vw;
@@ -795,8 +795,8 @@ body.lock {
    height: 9.635vw;
    animation: moon 30s infinite linear;
    position: absolute;
-   left: -48px;
-   top: -21px;
+   left: -3.385vw;
+   top: -1.823vw;
 }
 
 @keyframes moon {
