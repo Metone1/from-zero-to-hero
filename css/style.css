@@ -534,6 +534,12 @@ body.lock {
    }
 }
 
+@media (max-width:500px) {
+   .swiper {
+      min-height: 300px;
+   }
+}
+
 .swiper__title {
    font-family: 'Fredoka One';
    text-align: center;
@@ -610,6 +616,12 @@ body.lock {
    }
 }
 
+@media (max-width:500px) {
+   .swiper-slide-link {
+      bottom: 48px;
+   }
+}
+
 .swiper__img {
    width: 26.042vw;
    height: 15.625vw;
@@ -634,6 +646,12 @@ body.lock {
       min-width: 200px;
       min-height: 240px;
       margin-left: 2vw;
+   }
+}
+
+@media (max-width:500px) {
+   .swiper__img {
+      min-height: 190px;
    }
 }
 
