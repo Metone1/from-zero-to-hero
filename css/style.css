@@ -695,7 +695,7 @@ body.lock {
 
    .burger__bg.show {
       opacity: 1;
-      transition: opacity .7s ease-in-out, width .4s ease-in-out, height .4s ease-in-out;
+      transition: opacity .7s ease-in-out, width .1s ease-in-out, height .1s ease-in-out;
    }
 
    .burger {
@@ -752,16 +752,13 @@ body.lock {
    }
 
    .burger__list {
-      width: 140px;
-      height: 125px;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       row-gap: 20px;
       position: absolute;
-      top: calc(50vh - 62px);
+      top: calc(50vh - 97px);
       right: calc(50vw - 88px);
-      opacity: 0;
       text-transform: uppercase;
       font-family: 'Fredoka One';
       font-size: 24px;
@@ -775,17 +772,11 @@ body.lock {
    }
 
    .burger__list li a {
-      display: none;
       color: aliceblue;
    }
 
    .burger__list.active {
-      transition: opacity .5s cubic-bezier(0.51, -0.20, 0.92, 0.44);
-      opacity: 1;
-   }
-
-   .burger__list.active li a {
-      display: block;
+      display: flex;
    }
 }
 
