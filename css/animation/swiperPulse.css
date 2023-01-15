@@ -1,0 +1,13 @@
+@keyframes swiperPulse {
+   from {
+      color: rgb(0, 136, 255);
+   }
+
+   50% {
+      color: rgb(131, 58, 226);
+   }
+
+   to {
+      color: rgb(0, 136, 255);
+   }
+}
