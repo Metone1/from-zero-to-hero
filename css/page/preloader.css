@@ -1,0 +1,33 @@
+.preloader {
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(black, cyan);
+   z-index: 1001;
+}
+
+.greetings {
+   display: flex;
+   margin-top: calc(50vh - 5.208vw);
+   align-items: center;
+   justify-content: center;
+}
+
+.greetings__text {
+   font-size: 10.417vw;
+   color: rgb(27, 228, 239);
+   text-transform: uppercase;
+   text-shadow: 0 0.677vw 0.469vw #000000, 0 -0.208vw 0.052vw rgb(0, 0, 0);
+   font-family: 'Fredoka One';
+}
+
+.loaded_hiding .preloader {
+   transition: .7s opacity;
+   opacity: 0;
+}
+
+.loaded .preloader {
+   display: none;
+}

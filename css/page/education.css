@@ -1,0 +1,44 @@
+.block__education {
+   background: linear-gradient(rgba(14, 174, 148, 0.851), rgba(85, 9, 147, 0.76));
+   text-shadow: 1px 1px rgb(0, 0, 0),
+      2px 2px rgb(0, 0, 0),
+      3px 3px rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   transition: transform .7s ease-in-out, opacity 1.2s ease-in-out;
+}
+
+.block__education.inactive {
+   transform: translateX(-45rem);
+   opacity: 0;
+}
+
+.block__education.active {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+.education__style {
+   font-family: 'Roboto';
+   font-weight: 400;
+   align-items: flex-start;
+   font-size: 0.781vw;
+}
+
+.education__university {
+   font-size: 1.146vw;
+}
+
+.edication__speciality {
+   font-size: 0.938vw;
+}
+
+.education__courses {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   row-gap: 0.26vw;
+}
+
+.education__courses li {
+   list-style: inside;
+}

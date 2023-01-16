@@ -1,0 +1,24 @@
+@media (max-width:700px) {
+   .block__shape-title {
+      font-size: 1.1rem;
+   }
+
+   .swiper {
+      width: 80vw;
+      margin-top: 0.75rem;
+      min-width: 12.5rem;
+      min-height: 17.5rem;
+   }
+
+   .swiper-slide-link {
+      bottom: 0;
+      left: 3.5vw;
+   }
+
+   .swiper__img {
+      width: 76vw;
+      min-width: 10rem;
+      min-height: 12rem;
+      margin-left: 2vw;
+   }
+}

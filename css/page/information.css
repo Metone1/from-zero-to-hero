@@ -1,0 +1,63 @@
+.block__information {
+   background: linear-gradient(rgba(39, 210, 232, 0.851), rgba(9, 9, 147, 0.76));
+   font-size: 0.938vw;
+   text-shadow: 1px 1px rgb(0, 0, 0),
+      2px 2px rgb(0, 0, 0),
+      3px 3px rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+
+   position: relative;
+   max-height: 20.833vw;
+   max-width: 18.229vw;
+   transition: transform .7s ease-in;
+}
+
+.block__information.inactive {
+   transform: scale(0.01);
+}
+
+.block__information.active {
+   transform: scale(1);
+}
+
+.information__photo {
+   width: 5.729vw;
+   height: 10.417vw;
+   border-radius: 0.781vw;
+   border: 0.12rem solid black;
+}
+
+.information__fullName {
+   text-transform: capitalize;
+   font-size: 1.25vw;
+}
+
+.information__phone {
+   color: rgb(177 223 255);
+}
+
+.information__phone:hover {
+   color: rgb(255, 255, 255);
+}
+
+.information__links {
+   display: flex;
+   column-gap: 0.781vw;
+   justify-content: center;
+   align-items: center;
+}
+
+.information__links a {
+   color: rgb(177 223 255);
+   text-shadow: 1px 1px rgb(0, 0, 0),
+      2px 2px rgb(0, 0, 0),
+      3px 3px rgb(0, 0, 0);
+   font-size: 1.458vw;
+}
+
+.information__links a:hover {
+   color: rgb(255, 255, 255);
+   text-shadow: 1px 1px rgb(0, 0, 0),
+      2px 2px rgb(0, 0, 0),
+      3px 3px rgb(255, 255, 255);
+}

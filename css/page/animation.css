@@ -1,0 +1,47 @@
+.animation.inactive {
+   transform: scale(0);
+}
+
+.animation.active {
+   transition: transform 1.1s ease-in-out;
+   transform: scale(1);
+   z-index: 100;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.moon__shadow {
+   width: 6.51vw;
+   height: 6.51vw;
+   border-radius: 50%;
+   position: absolute;
+   left: 5.729vw;
+   bottom: -20vw;
+   z-index: 1;
+   box-shadow: 0.05rem 0.05rem 2.865vw 0.26vw black;
+}
+
+.animation__moon {
+   width: 12.76vw;
+   height: 9.635vw;
+   animation: moon 30s infinite linear;
+   position: absolute;
+   left: -3.385vw;
+   bottom: -1.823vw;
+}
+
+.animation__rocket {
+   position: absolute;
+   left: 7.5vw;
+   bottom: -20vw;
+   transform: rotate(-45deg);
+   animation: rocket 7s linear forwards 12s;
+   width: 4.167vw;
+   height: 4.167vw;
+}
+
+.animation_rocket img {
+   width: inherit;
+   height: inherit;
+}

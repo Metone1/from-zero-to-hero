@@ -1,0 +1,25 @@
+@media (max-width:500px) {
+   .swiper {
+      min-height: 15rem;
+   }
+
+   .swiper-slide-link {
+      bottom: 2.4rem;
+   }
+
+   .swiper__img {
+      min-height: 9.5rem;
+   }
+
+   .burger__list {
+      font-size: 0.9rem;
+      right: calc(50vw - 4rem);
+   }
+
+
+   .animation.active {
+      display: none;
+   }
+
+
+}

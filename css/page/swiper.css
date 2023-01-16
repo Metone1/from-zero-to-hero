@@ -1,0 +1,69 @@
+.swiper {
+   margin-top: 1.563vw;
+   width: 28.646vw;
+   height: 22.396vw;
+   border-radius: 0.521vw;
+   background: linear-gradient(rgba(85, 9, 147, 0.76), rgba(14, 174, 148, 0.851));
+   box-shadow: 0px 0.1px 1.4rem -0.3rem #000000;
+   transition: transform 1s ease-in-out, opacity 1.2s ease-in-out;
+}
+
+.swiper.inactive {
+   opacity: 0;
+   transform: translateY(45rem);
+}
+
+.swiper.active {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.swiper__title {
+   font-family: 'Fredoka One';
+   text-align: center;
+   margin: 1.042vw 0;
+}
+
+.swiper-slide {
+   height: 15.625vw;
+}
+
+.swiper-slide-link {
+   font-size: 1.563vw;
+   position: absolute;
+   bottom: 0.417vw;
+   left: 1.823vw;
+   animation: swiperPulse 3s infinite;
+}
+
+.swiper-slide-link i:hover {
+   text-shadow: -1px -1px rgb(0, 0, 0),
+      1px 1px rgb(0, 0, 0);
+   font-size: 1.719vw;
+}
+
+.swiper-slide[aria-label="4 / 4"] .swiper-slide-link i:hover {
+   text-shadow: -1px -1px rgb(255, 255, 255),
+      1px 1px rgb(255, 255, 255);
+}
+
+.swiper__img {
+   width: 26.042vw;
+   height: 15.625vw;
+   border-radius: 0.521vw;
+   margin-left: 1.302vw;
+   border: 0.12rem solid black;
+   box-shadow: inset 0.12rem 0.12rem 03rem rgba(154, 147, 140, 0.5), 0.06rem 0.06rem 0.3rem rgba(255, 255, 255, 1);
+}
+
+.swiper-pagination-bullet {
+   background: #00fff7;
+   opacity: 1;
+   width: 0.6rem;
+   height: 0.6rem;
+   margin-bottom: 0.3rem;
+}
+
+.swiper-pagination-bullet-active {
+   background: #002aff;
+}

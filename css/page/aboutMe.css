@@ -1,0 +1,28 @@
+.block__aboutMe {
+   background: linear-gradient(rgba(14, 174, 148, 0.851), rgba(85, 9, 147, 0.76));
+   transition: transform .7s ease-in-out, opacity 1.2s ease-in-out;
+}
+
+.block__aboutMe.inactive {
+   transform: translateX(45rem);
+   opacity: 0;
+}
+
+.block__aboutMe.active {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+.aboutMe__text {
+   font-family: 'Roboto';
+   font-size: 0.833vw;
+   text-shadow: 1px 1px rgb(0, 0, 0),
+      2px 2px rgb(0, 0, 0),
+      3px 3px rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+
+.aboutMe__text span {
+   display: block;
+   margin: 0.521vw;
+}

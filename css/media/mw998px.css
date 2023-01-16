@@ -1,0 +1,144 @@
+@media (max-width:998px) {
+   .main__block {
+      column-gap: 0.75rem;
+      row-gap: 0.75rem;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .main__block .block__shape:nth-child(2) {
+      order: 0;
+   }
+
+   .main__block .block__shape:nth-child(1) {
+      order: 1;
+      width: 80vw;
+   }
+
+   .main__block .block__shape:nth-child(3) {
+      order: 2;
+      width: 80vw;
+   }
+
+   .burger__bg {
+      position: fixed;
+      z-index: 1000;
+      top: -1rem;
+      right: -1rem;
+      width: 4rem;
+      height: 4rem;
+      background: linear-gradient(rgba(39, 210, 232, 0.908), rgba(9, 9, 147, 0.943));
+      box-shadow: 0 0.05rem 1.25rem -0.4rem #000000;
+      border-radius: 1.5rem;
+   }
+
+   .burger__bg.active {
+      width: calc(100% + 2rem);
+      height: calc(100% + 2rem);
+   }
+
+   .burger__bg.inactive {
+      opacity: 0;
+   }
+
+   .burger__bg.show {
+      opacity: 1;
+      transition: opacity .7s ease-in-out, width .1s ease-in-out, height .1s ease-in-out;
+   }
+
+   .burger {
+      z-index: 1000;
+      display: block;
+      position: fixed;
+      top: 1rem;
+      right: 0.875rem;
+      width: 1.25rem;
+      height: 1rem;
+      cursor: pointer;
+   }
+
+   .burger span {
+      top: 50%;
+      transform: scale(1) translate(0, -50%);
+   }
+
+   .burger::before {
+      top: 0.1rem;
+   }
+
+   .burger::after {
+      bottom: 0.1rem;
+   }
+
+   .burger::before,
+   .burger::after {
+      content: '';
+   }
+
+   .burger span,
+   .burger::before,
+   .burger::after {
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #fff;
+   }
+
+   .burger.active span {
+      transform: scale(0);
+   }
+
+   .burger.active::before {
+      top: 47%;
+      transform: rotate(-45deg);
+   }
+
+   .burger.active::after {
+      top: 47%;
+      transform: rotate(45deg);
+   }
+
+   .burger__list {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 1rem;
+      position: absolute;
+      top: calc(50vh - 5rem);
+      right: calc(50vw - 5rem);
+      text-transform: uppercase;
+      font-family: 'Fredoka One';
+      font-size: 1.2rem;
+      text-shadow: 0 0.5rem 0.35rem #000000, 0 -0.2px 0.05rem rgb(0 0 0);
+   }
+
+   .burger__list li a {
+      color: aliceblue;
+   }
+
+   .burger__list.active {
+      display: flex;
+   }
+
+   .moon__shadow {
+      width: 4rem;
+      height: 4rem;
+      left: 2vw;
+      bottom: 20rem;
+   }
+
+   .animation__moon {
+      width: 7rem;
+      height: 5.3rem;
+      left: -1.75rem;
+      bottom: -0.6rem;
+   }
+
+   .animation__rocket {
+      left: 2.5rem;
+      bottom: 21rem;
+      width: 2.5rem;
+      height: 2.5rem;
+   }
+}
